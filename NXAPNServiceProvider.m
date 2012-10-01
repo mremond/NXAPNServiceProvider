@@ -159,8 +159,9 @@
         
     });
 
-    dispatch_release(_gatewayQueue);
-    dispatch_release(_feedbackQueue);
+// Not needed on iOS 6 and MacOSX 10.8
+//    dispatch_release(_gatewayQueue);
+//    dispatch_release(_feedbackQueue);
 }
 
 - (NSString *)password;
